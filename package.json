@@ -6,16 +6,16 @@
   "scripts": {
     "dev": "vinext dev -p 3090",
     "build": "vinext build",
-    "build:cloudflare": "opennextjs-cloudflare build",
+    "build:cloudflare": "vinext build",
     "start": "vinext start",
-    "pretty": "prettier --write . '!./.open-next'",
+    "pretty": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "dev:next": "next dev -p 3090",
     "build:next": "next build",
     "start:next": "next start",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "vinext deploy --preview",
+    "deploy": "vinext deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
@@ -24,7 +24,6 @@
     "@chakra-ui/system": "^2.5.7",
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
-    "@opennextjs/cloudflare": "^1.3.0",
     "@reduxjs/toolkit": "^2.12.0",
     "date-fns": "^2.30.0",
     "framer-motion": "^12.40.0",
