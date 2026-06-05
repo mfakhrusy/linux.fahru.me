@@ -1,6 +1,14 @@
 // https://stackoverflow.com/a/61519537/5835100
 
 import { useEffect, useState } from "react";
+import {
+  isAndroid,
+  isIPad13,
+  isIPhone13,
+  isMobileSafari,
+  isTablet,
+  isWinPhone,
+} from "react-device-detect";
 
 function isTouchDevice() {
   if (typeof window === "undefined") return false;
@@ -34,15 +42,6 @@ export default function useIsTouchDevice() {
 
   useEffect(() => {
     if (isTouchLS === "" || isTouchLS === null) {
-      const {
-        isAndroid,
-        isIPad13,
-        isIPhone13,
-        isWinPhone,
-        isMobileSafari,
-        isTablet,
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-      } = require("react-device-detect");
       const newIsTouch =
         isAndroid ||
         isIPad13 ||
