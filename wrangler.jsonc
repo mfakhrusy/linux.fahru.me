@@ -4,27 +4,5 @@
   "compatibility_flags": ["nodejs_compat"],
   "vars": {
     "NEXT_PUBLIC_API_HOST": "https://server.fahru.me"
-  },
-  "routes": [
-    {
-      "pattern": "cf.fahru.me",
-      "custom_domain": true
-    },
-    {
-      "pattern": "fahru.me",
-      "custom_domain": true
-    },
-    {
-      "pattern": "www.fahru.me",
-      "custom_domain": true
-    },
-    {
-      "pattern": "fakhrusy.com",
-      "custom_domain": true
-    },
-    {
-      "pattern": "www.fakhrusy.com",
-      "custom_domain": true
-    }
-  ]
+  }
 }
