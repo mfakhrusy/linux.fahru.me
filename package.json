@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vinext dev -p 3090",
     "build": "vinext build",
-    "build:cloudflare": "vinext build",
+    "build:cloudflare": "vite build --app",
     "start": "vinext start",
     "pretty": "prettier --write .",
     "lint": "eslint .",
@@ -14,8 +14,8 @@
     "dev:next": "next dev -p 3090",
     "build:next": "next build",
     "start:next": "next start",
-    "preview": "vinext deploy --preview",
-    "deploy": "vinext deploy",
+    "preview": "vite build --app && wrangler deploy --dry-run",
+    "deploy": "vite build --app && wrangler deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {

@@ -18,7 +18,7 @@ interface Env {
   };
 }
 
-export default {
+const worker = {
   async fetch(request: Request, env: Env): Promise<Response> {
     try {
       const url = new URL(request.url);
@@ -54,3 +54,5 @@ export default {
     }
   },
 };
+
+export default worker;

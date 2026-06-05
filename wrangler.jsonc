@@ -1,7 +1,12 @@
 {
   "name": "fahru-dot-me",
+  "main": "worker/index.ts",
   "compatibility_date": "2025-03-25",
   "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "not_found_handling": "none",
+    "binding": "ASSETS"
+  },
   "vars": {
     "NEXT_PUBLIC_API_HOST": "https://server.fahru.me"
   }
