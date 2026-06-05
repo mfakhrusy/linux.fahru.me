@@ -1,3 +1,5 @@
+"use client";
+
 import Head from "next/head";
 import { Provider } from "../Provider";
 import "xterm/css/xterm.css";

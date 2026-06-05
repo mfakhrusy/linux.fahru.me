@@ -1,3 +1,5 @@
+"use client";
+
 import { type PropsWithChildren, useRef } from "react";
 import { DragContext } from "@/context/DragContext";
 

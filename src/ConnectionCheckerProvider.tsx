@@ -1,3 +1,5 @@
+"use client";
+
 import { type PropsWithChildren, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { serverReachable } from "@/lib/serverReachable";

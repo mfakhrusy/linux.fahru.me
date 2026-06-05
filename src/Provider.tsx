@@ -1,3 +1,5 @@
+"use client";
+
 import { ChakraProvider } from "@chakra-ui/react";
 import { PropsWithChildren } from "react";
 import { Provider as ReduxProvider } from "react-redux";
