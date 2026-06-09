@@ -70,12 +70,12 @@ export function makeMarkdownBasedApps(): Array<DesktopIcon> {
       title: "To-Dos",
       component: <AppTodo />,
     },
-    {
-      iconName: "puzzle.png", // TODO: change
-      appName: "AppGuestBook",
-      title: "Guest Book",
-      component: <AppGuestBook />,
-    },
+    // {
+    //   iconName: "puzzle.png", // TODO: change
+    //   appName: "AppGuestBook",
+    //   title: "Guest Book",
+    //   component: <AppGuestBook />,
+    // },
   ];
 }
 
